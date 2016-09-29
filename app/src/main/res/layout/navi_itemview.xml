@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:background="#349aed"
+        android:id="@+id/album_imgview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+
+
+    <com.nk.framework.view.AlphaButton
+        android:id="@+id/start_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/common_round_stroke_ffffff_5dp"
+        android:text="立刻体验"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

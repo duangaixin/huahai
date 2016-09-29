@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 一般 -->
+    <!-- 用于普通段落信息、引导词   如段落标题等 -->
+    <color name="black_555555">#555555</color>
+
+    <!-- 通用背景 -->
+    <color name="gray_f4f4f4">#f4f4f4</color>
+    <!--
+用于重要板块文字信息、内页标题信息
+如导航名称、大板块标题、类目名称等
+-->
+    <color name="black_333333">#333333</color>
+
+
+    <!-- 用于辅助、次要的文字信息、普通按钮描边 如提示信息 说明信息等 -->
+    <color name="gray_999999">#999999</color>
+
+
+    <!-- 用于分割线 、标签描边 -->
+    <color name="gray_d7d7d7">#d7d7d7</color>
+    <!-- 用于内容区域底色 、内容之间分割线 -->
+    <color name="gray_eeeeee">#eeeeee</color>
+    <!-- 用于置灰按钮底色 -->
+    <color name="gray_e4e4e4">#E4E4E4</color>
+
+    <!--
+APP主旋律，用于特别需要强调和突出的文字、按钮和ICON
+如大标题、提交按钮和可点击等状态文字时使用
+-->
+    <color name="red_ef544f">#ef544f</color>
+
+    <color name="blue_228bee">#228bee</color>
+    <color name="red_e3314e">#e3314e</color>
+    <color name="color_FFCACACA">#FFCACACA</color>
+    <color name="color_FFF2AD45">#FFF2AD45</color>
+</resources>

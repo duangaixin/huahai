@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="viewfinder_mask">#80000000</color>
+        
+    <color name="click_bg">#dedadf</color>
+    <color name="theme_color">#34373c</color>
+</resources>

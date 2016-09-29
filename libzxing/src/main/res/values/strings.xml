@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">二维码扫描</string>
+    <!-- 二维码 -->
+    <string name="msg_default_status">将二维码放入框内，即可自动扫描</string>
+    <string name="twocodetitle">扫描二维码</string>
+
+</resources>

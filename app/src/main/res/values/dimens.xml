@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- 顶部topbar高度 -->
+    <dimen name="top_box_height">48dp</dimen>
+    <dimen name="line_width">0.3dp</dimen>
+
+    <!-- 用于一些较为重要的文字或操作按钮 如模块名称、 -->
+    <dimen name="text_size_emphasize_17sp">17sp</dimen>
+
+    <!-- 用于大部分文字 如大段文字 -->
+    <dimen name="text_size_common_16sp">16sp</dimen>
+
+    <!-- 用于大多数文字 如小标题。模块描述等 -->
+
+    <dimen name="text_size_common_15sp">15sp</dimen>
+
+    <!-- 边缘空白 分割线距页边 -->
+    <dimen name="margin_edge">10dp</dimen>
+    <!-- 文字距离分割线 -->
+    <dimen name="margin_text_divider">10dp</dimen>
+    <dimen name="margin_text_text">10dp</dimen>
+    <dimen name="margin_text_edge">20dp</dimen>
+    <!-- 用于小文字模块间分割 -->
+    <dimen name="margin_vertical_text_module">15dp</dimen>
+
+
+    <dimen name="common_btn_height">40dp</dimen>
+    <dimen name="common_btn_width">130dp</dimen>
+
+    <dimen name="common_btn_small_height">33.33dp</dimen>
+    <dimen name="common_btn_small_width">62.67dp</dimen>
+
+    <!-- 用于少量重要标题 如导航标题、类目名称等 -->
+
+    <dimen name="text_size_title_20sp">20sp</dimen>
+
+
+    <!--<dimen name="common_btn_long_width">336dp</dimen>-->
+    <dimen name="common_btn_long_height">46.67dp</dimen>
+
+
+    <!-- 用于辅助性文字  如次要的副标语等 -->
+    <dimen name="text_size_minor_14sp">14sp</dimen>
+    <!-- 用于辅助性文字 如次要的说明信息 -->
+    <dimen name="text_size_minor_13sp">13sp</dimen>
+    <dimen name="text_size_small_12sp">12sp</dimen>
+
+    <dimen name="text_size_small_11sp">11sp</dimen>
+
+
+</resources>

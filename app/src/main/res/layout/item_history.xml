@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <com.nk.framework.view.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:text="2016-09-22 11:25:33"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_toLeftOf="@+id/txt_success"
+                android:text="图片"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+               android:layout_toLeftOf="@+id/txt_num"
+                android:text="(5"
+                />
+
+            <TextView
+                android:id="@+id/txt_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_toLeftOf="@+id/img_arrow"
+                android:text="/5)"
+                 android:layout_marginRight="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/icon_arrow_right"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/red_e3314e"
+                android:text="删除"/>
+
+
+        </LinearLayout>
+
+
+    </com.nk.framework.view.SwipeLayout>
+
+
+</RelativeLayout>

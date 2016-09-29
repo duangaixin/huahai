@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="@dimen/dialog_width"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textColor="#555555"
+            android:textSize="18sp"
+            tools:text="用户须知"/>
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            tools:text="沙发大师富士达萨芬撒阿斯蒂芬阿萨德按时奥迪阿萨德爱抚暗室逢灯阿萨德阿萨德阿萨德阿萨德阿萨德阿萨德"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="30dp"
+            android:background="#ef544f"
+            />
+
+        <com.nk.framework.view.AlphaButton2
+            android:id="@+id/dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_tip_btn_ok_bg"
+            android:text="知道了"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

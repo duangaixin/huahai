@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f7f7f7"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_box"
+        style="@style/top_box"
+        >
+
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/top_box_back"/>
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_box_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#349aed"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-30dp"
+        >
+
+        <ImageView
+            android:id="@+id/person_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/head"
+            />
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/person_img"
+            android:gravity="center"
+            android:text="duanxin"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/person_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:text="2434334433434"
+            android:textSize="14sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <View style="@style/horizontal_divider_module"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="历史记录"
+            android:textColor="@color/black_555555"
+            android:textSize="@dimen/text_size_common_16sp"/>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/icon_arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_divider_module"
+        android:layout_marginLeft="@dimen/margin_edge"/>
+
+
+    <View style="@style/horizontal_divider_module"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="清理缓存"
+            android:textColor="@color/black_555555"
+            android:textSize="@dimen/text_size_common_16sp"/>
+
+        <TextView
+            android:id="@+id/cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/img_arrow"
+            android:text="5.00M"
+            android:textColor="@color/black_555555"
+            android:textSize="@dimen/text_size_common_16sp"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/icon_arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_divider_module"
+        android:layout_marginLeft="@dimen/margin_edge"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="关于我们"
+            android:textColor="@color/black_555555"
+            android:textSize="@dimen/text_size_common_16sp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/icon_arrow_right"/>
+    </RelativeLayout>
+
+    <com.nk.framework.view.AlphaButton
+        android:id="@+id/btn_quit"
+        style="@style/common_btn_red_long"
+        android:layout_below="@+id/login_mid_box"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:text="退出当前账号"
+
+        />
+
+    <View style="@style/horizontal_divider_module"/>
+
+</LinearLayout>

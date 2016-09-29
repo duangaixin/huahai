@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f8f8"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_box"
+        style="@style/top_box"
+        android:background="#349aed">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/top_box_back"/>
+
+        <TextView
+            style="@style/top_box_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/login"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+
+            <View style="@style/horizontal_divider_module"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/tv_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="账号"/>
+
+                <com.nk.framework.view.ClearEditText
+                    android:id="@+id/et_login_username"
+                    style="@style/common_form_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/tv_name_title"
+                    android:digits="0123456789"
+                    android:hint="请输入您的账号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_divider_module"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/tv_login_pwd_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="密码"/>
+
+                <com.nk.framework.view.ClearEditText
+                    android:id="@+id/et_login_userpwd"
+                    style="@style/common_form_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/tv_login_pwd_title"
+                    android:hint="请输入您的密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_login_del_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/icon_del"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View style="@style/horizontal_divider_module"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+            <com.lzy.imagepicker.view.SuperCheckBox
+                style="@style/SuperCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_ck"
+                android:checked="false"
+                android:text="自动登录"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/margin_edge"
+                android:textColor="@color/blue_228bee"
+                android:textSize="@dimen/text_size_minor_14sp"
+                android:layout_marginRight="12dp"
+                />
+
+        </RelativeLayout>
+
+
+        <com.nk.framework.view.AlphaButton2
+            android:id="@+id/btn_login"
+            style="@style/common_btn_red_long"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#349aed"
+            android:text="登录"
+            android:layout_height="40dp"
+
+            />
+
+        <com.nk.framework.view.AlphaButton2
+            android:layout_height="40dp"
+            android:id="@+id/btn_login_regist"
+            style="@style/common_btn_red_long"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#b2b0b0"
+            android:text="注册"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/txt_resetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+             android:layout_marginTop="160dp"
+            android:text="忘记密码？"
+            android:textColor="@color/blue_228bee"
+            android:textSize="@dimen/text_size_minor_14sp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

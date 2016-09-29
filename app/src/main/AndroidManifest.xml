@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.nk.hhImg">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+
+        android:name="com.nk.framework.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/huahaicloud"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".guide.activity.SplashActivity"
+            android:theme="@style/launch">
+         <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".guide.activity.NavigationPicActivity"/>
+        <activity
+            android:name=".checkversion.activity.UpdateActivity"/>
+
+        <activity
+            android:name=".user.activity.LoginActivity"/>
+        <activity
+            android:name=".user.activity.RegistSmsActivity"/>
+        <activity
+            android:name=".user.activity.ResetPwdSmsActivity"/>
+        <activity
+            android:name=".user.activity.ResetLoginPsdActivity"/>
+        <activity
+            android:name=".user.activity.AddUserInfoActivity"/>
+        <activity
+            android:name=".user.activity.PersonActivity"/>
+        <activity
+            android:name=".user.activity.AboutUsActivity"/>
+        <activity
+            android:name=".user.activity.HistoryActivity"/>
+
+
+        <activity
+            android:name=".home.activity.HomeActivity">
+        </activity>
+        <activity
+            android:name=".home.activity.SelectPicActivity">
+               <intent-filter>
+                   <action android:name="android.intent.action.MAIN"/>
+                   <category android:name="android.intent.category.LAUNCHER"/>
+               </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.activity.UploadPicActivity"/>
+    </application>
+
+</manifest>
